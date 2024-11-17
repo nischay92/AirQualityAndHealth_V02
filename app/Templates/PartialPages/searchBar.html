@@ -1,0 +1,36 @@
+<div class="search-bar">
+    <form action="/search" method="GET">
+        <!-- Pollutant Dropdown -->
+        <div class="form-group">
+            <label for="pollutant">Pollutant:</label>
+            <select id="pollutant" name="pollutant">
+                {% for pollutant in pollutants %}
+                <option value="{{ pollutant.value }}">{{ pollutant.value }}</option>
+                {% endfor %}
+            </select>
+        </div>
+
+        <!-- County Dropdown -->
+        <div class="form-group">
+            <label for="county">County:</label>
+            <select id="county" name="county">
+                {% for county in countys %}
+                <option value="{{ county.value }}">{{ county.value }}</option>
+                {% endfor %}
+            </select>
+        </div>
+
+        <!-- Date Range -->
+        <div class="form-group date-range">
+            <label for="date-range">Date Range:</label>
+            <input type="date" id="start-date" name="start_date" class="form-control">
+            <span>to</span>
+            <input type="date" id="end-date" name="end_date" class="form-control">
+        </div>
+
+        <!-- Search Button -->
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary">Search</button>
+        </div>
+    </form>
+</div>

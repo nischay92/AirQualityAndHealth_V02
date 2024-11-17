@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block title %}Home - Analysis Center{% endblock %}
+
+{% block content %}
+<section id="home" class="slider" data-stellar-background-ratio="0.5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-offset-1 col-md-10 text-center">
+                <h1>Welcome to Air Quality Dashboard</h1>
+                <p>Explore data-driven insights and analysis of air quality and health risks.</p>
+                <div class="landing-buttons">
+                    <a href="/statistics" class="btn btn-primary btn-lg">Statistical Analysis</a>
+                    <a href="/geography" class="btn btn-success btn-lg">Geographical Analysis</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

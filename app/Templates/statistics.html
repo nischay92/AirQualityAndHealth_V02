@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block title %}Statistical Analysis{% endblock %}
+
+{% block content %}
+<section class="container">
+    <h1>Statistical Analysis</h1>
+    <p>Use the search bar below to filter results by pollutant, county, and date range.</p>
+    <!-- Include the search bar partial -->
+    {% include "PartialPages/searchBar.html" %}
+</section>
+{% endblock %}

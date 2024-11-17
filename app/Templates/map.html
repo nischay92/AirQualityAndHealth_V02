@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block title %}Geographical Analysis Map{% endblock %}
+
+{% block content %}
+<section class="container">
+    <h1>Geographical Analysis Map</h1>
+    <div id="map-container">
+        <!-- Embed the map -->
+        <div>
+            <iframe src="{{ url_for('static', filename='Genmap1.html') }}" width="100%" height="600px" frameborder="0"></iframe>
+        </div>    
+    </div>
+</section>
+{% endblock %} 
+
