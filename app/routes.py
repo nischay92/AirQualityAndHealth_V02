@@ -113,5 +113,7 @@ def search_geo():
             ).add_to(map_)
     map_path = "static/Genmap1.html"
     map_.save(map_path)
+    map_html = map_._repr_html_()
 
-    return render_template('map.html')
+    return render_template('map.html', map_html=map_html)
+ss
